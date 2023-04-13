@@ -1,0 +1,13 @@
+<form action="/edit-car/{{car._id}}" method="post">
+  <input type="text" name="make" placeholder="Make" value="{{car.make}}" />
+  <br />
+  <input type="text" name="model" placeholder="Model" value="{{car.model}}" />
+  <br />
+  <input type="number" name="year" placeholder="Year" value="{{car.year}}" />
+  <br />
+  <input type="submit" class="btn" />
+</form>
+
+<form action="/delete-car/{{car._id}}" method="post">
+  <input type="submit" value="Delete" class="btn delete-btn" />
+</form>
